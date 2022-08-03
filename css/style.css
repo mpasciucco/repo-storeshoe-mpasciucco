@@ -1,0 +1,191 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html { /* etiqueta raíz */
+    font-size: 62.5%; /* esto hace q cada REM que usemos sea de 10px */
+}
+
+ul{
+    list-style: none;  /* las ul no tienen los puntos */
+}
+
+a{
+    text-decoration: none; /* todos mis endcore no tienen la linea de abajo */
+}
+
+.navegacion{
+    color:#E1701A;
+    font-family: 'Barlow', sans-serif;
+    margin-bottom: 7rem;
+}
+
+.navegacion div{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    position: fixed;
+    
+}
+
+.navegacion div nav{ 
+    position: fixed;
+    right: 50px;
+    font-size: 2.7rem;
+    font-family: 'Barlow', sans-serif;
+    margin: 2rem;
+    margin-top: 4rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: end;
+    
+}
+
+.navegacion div nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: end;
+
+    
+    /* position: fixed;  lo tuve que comentar porque al ponerlo fixed, se me juntan todas las palabras de la barra de navegacion*/ 
+}
+
+
+.navegacion div nav ul li a {
+    color: black;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    padding: 0.4rem; 
+    border: #E1701A solid 0.3rem; 
+     
+}
+
+.navegacion a h1{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 6rem;  /* eligo tamaño de fuente del h1 en este caso */
+    color:#E1701A;
+    font-family: 'Barlow', sans-serif;
+}
+
+
+.logo {
+    border-radius: 50%;
+    border: #E1701A solid 0.5rem;
+}
+
+body{
+    background-color: #F6DCBF;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 10px;
+}
+.content div {
+    
+    margin-left: 0.5rem;
+    color: black;
+    font-size:  2rem;
+    font-family: 'Exo 2', sans-serif; 
+}
+
+.content div img{
+    display: inline-block;
+    margin: 0.8rem;
+}
+
+.content div p{
+    text-align: center;
+}
+
+h2{
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    color: black;
+    font-size: 4rem;
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+    background-color: #AAAAAA;
+}
+
+
+
+.contact {
+ 
+    text-align: center;
+}
+
+
+
+button{
+    background-color: #E1701A;
+    padding: 0.3rem;
+    margin-bottom: 2rem;
+    margin-left: 1.5rem;
+    border: solid 0.05rem black;
+}
+
+.input-textarea {
+    min-height: 120px;
+    width: 50%;
+    padding: 0.625rem;
+    resize: vertical;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr; /* Tiene que estar si o si*/
+    grid-template-rows: 1fr; /* Tiene que estar si o si*/
+    grid-row-gap: 5px;
+    grid-template-areas: 
+    "nav"
+    "reserved";
+    font-size: 1.5rem; 
+    background-color: #AAAAAA;
+    border: black 0.1rem inset;
+    text-align: center;
+}
+
+footer nav {
+    margin-top: 2rem;
+    grid-area: nav;
+}
+footer p{
+    grid-area: reserved;
+}
+
+
+i{ /*color y tamaño de logos footer*/
+    color: #E1701A;
+    font-size: 3rem;
+}
+/* ------------- TABLET ------------- */
+
+@media screen and (max-width: 768px){
+
+    .navegacion a h1{
+        font-size: 5rem;
+    }
+
+    .navegacion div nav{
+        font-size: 2rem;
+        margin-top: 10rem;
+    }
+  
+    h2{
+        font-size: 3.5rem;
+    }
+
+}
+
+/* font-family: 'Barlow', sans-serif; */
+/* font-family: 'Exo 2', sans-serif; */
