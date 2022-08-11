@@ -43,7 +43,7 @@ background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(170
 
 
 
-.navegacion{
+/* .navegacion{
     color:#E1701A;
     font-family: 'Barlow', sans-serif;
     margin-bottom: 7rem;
@@ -74,14 +74,11 @@ background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(170
     display: flex;
     flex-flow: row wrap;
     justify-content: end;
-    
-
-    
-    /* position: fixed;  lo tuve que comentar porque al ponerlo fixed, se me juntan todas las palabras de la barra de navegacion*/ 
-}
+       
+} 
 
 
-.navegacion div nav ul li a {
+ .navegacion div nav ul li a {
     color: black;
     font-weight: 700;
     border-radius: 0.5rem;
@@ -90,7 +87,7 @@ background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(170
     background: rgb(0,0,0);
 background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(170,170,170,1) 0%, rgba(225,112,26,1) 100%);
      
-}
+} */ 
 
 header a h1{
     display: flex;
