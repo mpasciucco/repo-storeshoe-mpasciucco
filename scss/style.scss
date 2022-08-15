@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html { /* etiqueta raíz */
+    font-size: 62.5%; /* esto hace q cada REM que usemos sea de 10px */
+}
+
+ul{
+    list-style: none;  /* las ul no tienen los puntos */
+}
+
+a{
+    text-decoration: none; /* todos mis endcore no tienen la linea de abajo */
+}
+.navbar{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(170,170,170,1) 0%, rgba(225,112,26,1) 100%);
+}
+
+.navbar-light .navbar-toggler {
+    background: rgb(0,0,0);
+background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(170,170,170,1) 0%, rgba(225,112,26,1) 100%);
+}
+
+.nav-link {
+    display: block;
+    text-align: end;
+    padding: 0.5rem 1rem;
+    color: #0d6efd;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+@media (min-width: 992px){
+    .navbar-expand-lg .navbar-collapse {
+    display: flex!important;
+    flex-basis: auto;
+    justify-content: end;
+    }
+}
