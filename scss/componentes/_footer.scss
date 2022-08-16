@@ -14,7 +14,7 @@
 }
 
 button{
-    background-color: #E1701A;
+    background-color: $maincolor;
     padding: 0.3rem;
     margin-bottom: 2rem;
     margin-left: 1.5rem;
@@ -50,6 +50,6 @@ footer {
 }
 
 i{ /*color y tamaño de logos footer*/
-    color: #E1701A;
+    color: $maincolor;
     font-size: 3rem;
 }

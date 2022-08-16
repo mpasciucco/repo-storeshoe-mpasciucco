@@ -1,15 +1,14 @@
+@import './base/variables';
 @import './componentes/header';
 @import './componentes/main';
 @import './componentes/footer';
+
 
 *{
     padding: 0;
     margin: 0;
 }
 
-.aprendiendo{
-    background-color: red;
-}
 html { /* etiqueta raíz */
     font-size: 62.5%; /* esto hace q cada REM que usemos sea de 10px */
 }
@@ -24,11 +23,10 @@ a{
 
 
 body{
-    background-color: #F6DCBF;
+    background-color: $backcolor;
     font-size: 2rem;
     font-family: 'Exo 2', sans-serif;
 }
-
 
 
 /* font-family: 'Barlow', sans-serif; */

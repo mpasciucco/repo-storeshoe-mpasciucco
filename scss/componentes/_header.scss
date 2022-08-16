@@ -36,7 +36,7 @@ header {
             margin-top: 2rem;
             margin-bottom: 2rem;
             font-size: 6rem;  /* eligo tamaño de fuente del h1 en este caso */
-            color:#E1701A;
+            color: $maincolor;
             font-family: 'Barlow', sans-serif;       
         }
         h1:hover{
@@ -49,5 +49,5 @@ header {
 
 .logo {
     border-radius: 50%;
-    border: #E1701A solid 0.5rem;
+    border: $maincolor solid 0.5rem;
 }
