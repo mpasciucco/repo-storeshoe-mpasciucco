@@ -1,17 +1,163 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 1 | @import './parciales/main';
- *   |         ^^^^^^^^^^^^^^^^^^
- *   '
- *   scss\style.scss 1:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import './parciales/main';\d\a   \2502          ^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\style.scss 1:9  root stylesheet";
+@charset "UTF-8";
+.contact {
+  text-align: center;
 }
+.contact h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: black;
+  font-size: 4rem;
+  text-align: center;
+  font-family: "Barlow", sans-serif;
+  background-color: #AAAAAA;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 0%, rgb(170, 170, 170) 0%, rgb(225, 112, 26) 100%);
+}
+
+button {
+  background-color: #E1701A;
+  padding: 0.3rem;
+  margin-bottom: 2rem;
+  margin-left: 1.5rem;
+  border: solid 0.05rem black;
+}
+
+.input-textarea {
+  min-height: 120px;
+  width: 50%;
+  padding: 0.625rem;
+  resize: vertical;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr; /* Tiene que estar si o si*/
+  grid-template-rows: 1fr; /* Tiene que estar si o si*/
+  grid-row-gap: 5px;
+  grid-template-areas: "nav" "reserved";
+  font-size: 1.5rem;
+  background-color: #AAAAAA;
+  border: black 0.1rem inset;
+  text-align: center;
+}
+footer nav {
+  margin-top: 2rem;
+  grid-area: nav;
+}
+footer p {
+  grid-area: reserved;
+}
+
+i { /*color y tamaño de logos footer*/
+  color: #E1701A;
+  font-size: 3rem;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-row-gap: 10px;
+}
+.content div {
+  margin-left: 0.5rem;
+  color: black;
+  font-size: 2rem;
+  font-family: "Exo 2", sans-serif;
+}
+.content div h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: black;
+  font-size: 4rem;
+  text-align: center;
+  font-family: "Barlow", sans-serif;
+  background-color: #AAAAAA;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 0%, rgb(170, 170, 170) 0%, rgb(225, 112, 26) 100%);
+}
+.content div img {
+  display: inline-block;
+  margin: 0.8rem;
+  width: 300px;
+  height: 300px;
+}
+.content div p {
+  text-align: center;
+}
+
+.navbar {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 0%, rgb(170, 170, 170) 0%, rgb(225, 112, 26) 100%);
+}
+
+.navbar-light .navbar-toggler {
+  background: rgb(0, 0, 0);
+  background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 0%, rgb(170, 170, 170) 0%, rgb(225, 112, 26) 100%);
+}
+
+.nav-link {
+  display: block;
+  text-align: end;
+  padding: 0.5rem 1rem;
+  color: #0d6efd;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    justify-content: end;
+  }
+}
+header a h1 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 6rem; /* eligo tamaño de fuente del h1 en este caso */
+  color: #E1701A;
+  font-family: "Barlow", sans-serif;
+}
+header a h1:hover {
+  transform: scale(1.3);
+  transition: all 2s;
+}
+
+.logo {
+  border-radius: 50%;
+  border: #E1701A solid 0.5rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html { /* etiqueta raíz */
+  font-size: 62.5%; /* esto hace q cada REM que usemos sea de 10px */
+}
+
+ul {
+  list-style: none; /* las ul no tienen los puntos */
+}
+
+a {
+  text-decoration: none; /* todos mis endcore no tienen la linea de abajo */
+}
+
+body {
+  background-color: #F6DCBF;
+  font-size: 2rem;
+  font-family: "Exo 2", sans-serif;
+}
+
+/* font-family: 'Barlow', sans-serif; */
+/* font-family: 'Exo 2', sans-serif; */
+
+/*# sourceMappingURL=style.css.map */

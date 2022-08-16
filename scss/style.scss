@@ -1,7 +1,6 @@
-@import './parciales/main';
-@import './componentes/footer';
-@import './componentes/main';
 @import './componentes/header';
+@import './componentes/main';
+@import './componentes/footer';
 
 *{
     padding: 0;
@@ -26,7 +25,6 @@ body{
     font-size: 2rem;
     font-family: 'Exo 2', sans-serif;
 }
-
 
 
 
