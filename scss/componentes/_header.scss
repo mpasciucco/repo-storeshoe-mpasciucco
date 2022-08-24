@@ -29,21 +29,22 @@ background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(170
 header {
     a{
         h1{
-            display: flex;
+            display: map-get($encabezado, df-header );
             flex-flow: row wrap;
-            justify-content: center;
+            justify-content: map-get($encabezado, ajustar-contenido);
             font-family: 'Barlow', sans-serif;
             font-weight: 700;
             margin-top: 2rem;
             margin-bottom: 2rem;
             font-size: 6rem;  /* eligo tamaño de fuente del h1 en este caso */
             color: $maincolor;
-            font-family: 'Barlow', sans-serif;       
+            font-family: 'Barlow', sans-serif;
+            &:hover{
+                transform: scale(1.3);
+                transition: all 2s;
+            }    
         }
-        h1:hover{
-            transform: scale(1.3);
-            transition: all 2s;
-        }
+        
     }
     
 }

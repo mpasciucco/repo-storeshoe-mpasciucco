@@ -9,9 +9,10 @@
         font-size:  2rem;
         font-family: 'Exo 2', sans-serif;
         h2{
-            margin-top: 2.5rem;
-            margin-bottom: 1rem;
-            color: black;
+            @include colores($colors, $marg-bot, $marg-top);
+            //margin-top: 2.5rem;
+            //margin-bottom: 1rem;
+            // color: black;
             font-size: 4rem;
             text-align: center;
             font-family: 'Barlow', sans-serif;
@@ -29,4 +30,32 @@
             text-align: center;
        }
     }
+}
+
+.contact {
+    text-align: center;
+    h2{
+        @extend %margin_font;    
+        color: black;
+        text-align: center;
+        font-family: 'Barlow', sans-serif;
+        background-color: #AAAAAA;
+        background: rgb(0,0,0);
+        background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(170,170,170,1) 0%, rgba(225,112,26,1) 100%);
+    }
+}
+
+button{
+    background-color: $maincolor;
+    padding: 0.3rem;
+    margin-bottom: 2rem;
+    margin-left: 1.5rem;
+    border: solid 0.05rem black;
+}
+
+.input-textarea {
+    min-height: 120px;
+    width: 50%;
+    padding: 0.625rem;
+    resize: vertical;
 }

@@ -1,0 +1,5 @@
+@mixin colores ($colors, $marg-bot, $marg-top){
+    color: $colors;
+    margin-bottom: $marg-bot;
+    margin-top: $marg-top;
+}
